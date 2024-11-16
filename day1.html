@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Student Details</h1>
+<p id="demo"></p>
+
+<script>
+class Student {
+  constructor(name, year, rollNo, mobileNo) {
+    this.name = name;
+    this.year = year;
+    this.rollNo = rollNo;
+    this.mobileNo = mobileNo;
+  }
+
+  stud =() => {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+const myStudent = [
+  new Student("Hari M", 2005, "22ITR032", "8478243490"),
+  new Student("Hema S", 2004, "22ITR033", "8438359399"),
+  new Student("Kowsika A", 2005, "22ITR050", "1234567891")
+];
+
+let output = "";
+myStudent.forEach((student) => {
+  output += `I am ${student.name}<br>`;
+  output += `and my roll number is ${student.rollNo}<br>`;
+  output += `I am ${student.stud()} years old.<br>`;
+  output += `Mobile No: ${student.mobileNo}<br><br><hr>`;
+});
+
+document.getElementById("demo").innerHTML = output;
+</script>
+
+</body>
+</html>

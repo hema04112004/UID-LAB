@@ -1,0 +1,131 @@
+/* General Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Card Styles */
+  .card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #007bff;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  li .card {
+    position: relative;
+  }
+  
+  li .card button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  li .card button:nth-child(2) {
+    right: 80px;
+  }
+  
+  li .card button:hover {
+    background-color: #0056b3;
+  }
+  
+  li .card button:focus {
+    outline: none;
+  }
+  
+  li .card br {
+    margin: 5px 0;
+  }
+  
+  li .card .btn {
+    margin: 10px 0 0 0;
+  }
+  
+  .card input[type="text"],
+  .card input[type="number"],
+  .card input[type="email"] {
+    width: calc(100% - 24px);
+    margin-bottom: 10px;
+  }
+  
+  /* Center-aligning buttons */
+  button {
+    display: block;
+    margin: 10px auto;
+  }
+  
